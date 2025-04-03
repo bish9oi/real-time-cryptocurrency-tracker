@@ -14,12 +14,10 @@ A **real-time Cryptocurrency Tracker** that allows users to view the latest pric
 
 ## 🖼 Screenshots
 ### Home Page 📌  
-![Home Page](![Screenshot (974)](https://github.com/user-attachments/assets/188e2a44-5d10-4e6f-8ccd-6a3b284193d8)
-)
+![Screenshot (974)](https://github.com/user-attachments/assets/188e2a44-5d10-4e6f-8ccd-6a3b284193d8)
 
 ### Coin Details Page 📊  
-![Ethereum Price Chart](![Screenshot (975)](https://github.com/user-attachments/assets/be1c4c86-fd03-4f88-9ee2-ac40f0963b97)
-)
+![Screenshot (975)](https://github.com/user-attachments/assets/be1c4c86-fd03-4f88-9ee2-ac40f0963b97)
 
 ## ⚙️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript  
