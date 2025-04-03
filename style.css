@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Controls - Search, Dropdown, Theme Toggle */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search, #currency-select,#sort-select, #theme-toggle {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#search {
+    width: 200px;
+}
+
+#currency-select {
+    width: 120px;
+}
+
+#theme-toggle {
+    background-color: #444;
+    color: white;
+}
+
+#theme-toggle:hover {
+    background-color: #666;
+}
+
+/* Crypto Cards */
+#crypto-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.crypto-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    width: 300px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.crypto-card:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+.crypto-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Price Change Colors */
+.green {
+    color: #00ff00;
+}
+
+.red {
+    color: #ff0000;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Light Mode */
+.light-mode {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.light-mode .crypto-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .crypto-card:hover {
+    background: #f1f1f1;
+}
+
+.light-mode #theme-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .crypto-card {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #search {
+        width: 100%;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .crypto-card {
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
